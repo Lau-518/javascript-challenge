@@ -50,8 +50,10 @@ function runEnter() {
   var filteredData = tableData.filter(
     (sightings) => sightings.datetime === inputValue
   );
+  buildTable(filteredData);
 
   console.log(filteredData);
 }
 
-buildTable(runEnter);
+// buildTable(runEnter);
+buildTable(tableData);
